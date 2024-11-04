@@ -1,9 +1,9 @@
-def countN(n):
+def factorial(n):
 
-    if n == 0:
-        return 0
-    
+    if n == 1:
+        return 1
     else:
-        return n + countN(n-1)
+        return n*factorial(n-1)
 
-print(countN(3))
+n = int(input("Enter n'th Number: "))
+print(f"Factorial of 6 is {factorial(n)}")
